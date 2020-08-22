@@ -67,8 +67,8 @@ public class AddTwoListNode {
         int size = Math.max(number1.size(), number2.size());
         for (int i = 0; i < size; i++) {
             int param1, param2, sum;
-            param1 = (i>=number1.size())?0:number1.get(i);
-            param2 = (i>= number2.size())?0:number2.get(i);
+            param1 = (i >= number1.size()) ? 0 : number1.get(i);
+            param2 = (i >= number2.size()) ? 0 : number2.get(i);
             sum = param1 + param2;
             result.add(0);
             //结果集扩容一位
@@ -81,9 +81,9 @@ public class AddTwoListNode {
                 result.set(i, (param1 + param2) + result.get(i));
             }
         }
-        for (int i = result.size(); i>0; i--) {
-            if (result.get(i-1)!=0){
-                return result.subList(0,i);
+        for (int i = result.size(); i > 0; i--) {
+            if (result.get(i - 1) != 0) {
+                return result.subList(0, i);
             }
         }
         return result;

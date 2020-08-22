@@ -9,10 +9,15 @@ import static leetcode2.AddTwoListNode.getNumFromNumber;
 import static leetcode2.AddTwoListNode.showListNodeValue;
 
 public class TestLc2 {
+
+    /**
+     * 测试类
+     */
     @Test
-    public void test(){
+    public void test() {
         ListNode node1 = createNodeBehind(getNumFromNumber(0L));
         ListNode node2 = createNodeBehind(getNumFromNumber(0L));
-        Assertions.assertEquals(0,showListNodeValue(addTwoNumbers(node1,node2)));
+        ListNode node3 = addTwoNumbers(node1, node2);
+        Assertions.assertEquals(0, showListNodeValue(node3));
     }
 }
