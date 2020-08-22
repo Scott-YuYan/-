@@ -9,10 +9,6 @@ import static leetcode2.AddTwoListNode.getNumFromNumber;
 import static leetcode2.AddTwoListNode.showListNodeValue;
 
 public class TestLc2 {
-
-    /**
-     * 测试类
-     */
     @Test
     public void test() {
         ListNode node1 = createNodeBehind(getNumFromNumber(0L));
